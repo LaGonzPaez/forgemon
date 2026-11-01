@@ -1,0 +1,1706 @@
+{
+ "_doc": "Généré par tools/build_creatures.py — modifier la source, pas ce fichier.",
+ "evolution_levels": {
+  "stage2": 16,
+  "stage3": 36
+ },
+ "lines": [
+  {
+   "id": "braisillon",
+   "group": "starter",
+   "option": "-",
+   "type": "Feu",
+   "palette": [
+    "#2B2B33",
+    "#7A2E1D",
+    "#FF7A1A",
+    "#FFE08A"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Braisillon",
+     "dex": "Né dans les cendres d'une forge. Sa plaque frontale chauffe quand tu t'entraînes.",
+     "brief": "Petit dragon trapu, rond, écailles anthracite, plaque frontale en fonte avec rivet incandescent, ailerons rouge brique, fissures orange sur les joues."
+    },
+    {
+     "stage": 2,
+     "name": "Fondragon",
+     "dex": "Ses fissures rougeoient après chaque activité réelle. Il ne grandit que si toi tu bouges.",
+     "brief": "Dragon bipède, plastron en fonte strié de lave, cornes acier, ailes membraneuses brique, queue à pointe d'acier, yeux ambre."
+    },
+    {
+     "stage": 3,
+     "name": "Pyrarque",
+     "dex": "Un brasier vivant. Il porte la somme de tout ton travail.",
+     "brief": "Grand dragon cuirassé, plastron-grille de fourneau incandescent, couronne de cornes, ailes déployées nervurées, aura orangée, crocs blancs."
+    }
+   ],
+   "special": "starter",
+   "evolution": {
+    "by": "activites_reelles",
+    "stage2": 30,
+    "stage3": 100
+   }
+  },
+  {
+   "id": "ondulin",
+   "group": "natation",
+   "option": "-",
+   "type": "Eau",
+   "palette": [
+    "#2BB3C0",
+    "#0F4C75",
+    "#F2D16B",
+    "#E8F7F5"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Ondulin",
+     "dex": "Petit hippocampe curieux. Il suit les nageurs et compte leurs longueurs.",
+     "brief": "Hippocampe miniature turquoise, ventre crème annelé, nageoire dorsale translucide, queue enroulée, grands yeux brillants."
+    },
+    {
+     "stage": 2,
+     "name": "Hippondule",
+     "dex": "Ses anneaux s'allongent à chaque séance de natation. Il fend le courant sans effort.",
+     "brief": "Hippocampe élancé bleu profond, crinière de nageoires en vagues, anneaux dorés, museau en tube allongé."
+    },
+    {
+     "stage": 3,
+     "name": "Maréquestre",
+     "dex": "Coursier des abysses. Il galope sur la houle et emporte son dresseur sous la surface.",
+     "brief": "Grand hippocampe-destrier, armure de corail sur le poitrail, crinière d'écume, queue spiralée lumineuse, palette bleu nuit / or."
+    }
+   ],
+   "special": "hippocampe",
+   "evolution": {
+    "by": "seances_natation",
+    "stage2": 8,
+    "stage3": 24
+   }
+  },
+  {
+   "id": "titanox",
+   "group": "finale",
+   "option": "-",
+   "type": "Acier",
+   "palette": [
+    "#8A96A8",
+    "#3A4160",
+    "#F2B544",
+    "#FF7A1A"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Titanox",
+     "dex": "Gardien du Sommet de la Balance. Il n'apparaît qu'au dresseur qui a atteint son poids cible sans perdre sa force.",
+     "brief": "Colosse de métal en forme de balance vivante : deux plateaux comme épaulières, cœur de forge visible dans le torse, cornes en crochets de levage, palette acier / or."
+    }
+   ],
+   "special": "legendaire"
+  },
+  {
+   "id": "papilune",
+   "group": "ecartes",
+   "option": "A",
+   "type": "Eau",
+   "palette": [
+    "#1A2F5C",
+    "#3E6BB5",
+    "#46C6E0",
+    "#D6ECF8"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Papilune",
+     "dex": "Plane entre deux eaux en ouvrant grand ses nageoires.",
+     "brief": "Petite raie manta bleu nuit, ventre clair, yeux sur le dessus, nageoires larges comme des bras ouverts."
+    },
+    {
+     "stage": 2,
+     "name": "Papilame",
+     "dex": "Ses nageoires s'étirent un peu plus à chaque écarté contrôlé.",
+     "brief": "Raie manta plus large, cornes céphaliques, points lumineux turquoise sur les ailes, queue fine."
+    },
+    {
+     "stage": 3,
+     "name": "Abyssaile",
+     "dex": "Son envergure masque la lune quand il remonte des abysses.",
+     "brief": "Raie géante, envergure immense, arc lumineux sur le bord des ailes, motifs d'étoiles sur le dos."
+    }
+   ]
+  },
+  {
+   "id": "phalenuit",
+   "group": "ecartes",
+   "option": "B",
+   "type": "Insecte",
+   "palette": [
+    "#5B4A6E",
+    "#A08BB8",
+    "#F2B544",
+    "#E8E1F0"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Phalénuit",
+     "dex": "Papillon de nuit qui ouvre ses ailes en grand vers la lumière.",
+     "brief": "Petit papillon de nuit duveteux gris-mauve, antennes plumeuses, ailes rondes repliées."
+    },
+    {
+     "stage": 2,
+     "name": "Phalombre",
+     "dex": "Plus ses ailes s'ouvrent, plus ses motifs d'yeux impressionnent.",
+     "brief": "Papillon de nuit plus grand, ailes à ocelles orange, corps velu, pattes fines."
+    },
+    {
+     "stage": 3,
+     "name": "Sélénaile",
+     "dex": "Ses ailes déployées couvrent une clairière entière sous la lune.",
+     "brief": "Grand papillon lunaire, ailes à longues queues, croissant argenté sur chaque aile, poussière lumineuse."
+    }
+   ]
+  },
+  {
+   "id": "agnelure",
+   "group": "chest_press",
+   "option": "A",
+   "type": "Choc",
+   "palette": [
+    "#EDE3CF",
+    "#8C6F4E",
+    "#5E4422",
+    "#C2410C"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Agnelure",
+     "dex": "Pousse tout ce qui bouge, laine en avant.",
+     "brief": "Agneau trapu à laine crème bouclée, petites cornes, front plat, sabots noirs."
+    },
+    {
+     "stage": 2,
+     "name": "Bélimur",
+     "dex": "Ses cornes s'enroulent à chaque série.",
+     "brief": "Bélier musclé, cornes enroulées épaisses, laine courte, poitrail large."
+    },
+    {
+     "stage": 3,
+     "name": "Cornemuraille",
+     "dex": "Enfonce les portes des forteresses.",
+     "brief": "Bélier massif aux cornes de pierre taillée, laine en plaques comme un mur de briques, posture de charge."
+    }
+   ]
+  },
+  {
+   "id": "bisonneau",
+   "group": "chest_press",
+   "option": "B",
+   "type": "Roc",
+   "palette": [
+    "#4A2C14",
+    "#8B5A2E",
+    "#EDE3CF",
+    "#8C8F99"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Bisonneau",
+     "dex": "Pousse tout devant lui, tête baissée.",
+     "brief": "Jeune bison brun, petite bosse, toison sombre sur la tête, petites cornes."
+    },
+    {
+     "stage": 2,
+     "name": "Bisoncharge",
+     "dex": "Sa bosse se durcit comme la pierre des plaines.",
+     "brief": "Bison puissant, toison épaisse, cornes courbes ivoire, bosse marquée."
+    },
+    {
+     "stage": 3,
+     "name": "Titabison",
+     "dex": "Une charge de Titabison déplace les collines.",
+     "brief": "Bison colossal, bosse couverte de pics de roche grise, barbe épaisse, cornes larges."
+    }
+   ]
+  },
+  {
+   "id": "pincelet",
+   "group": "incline",
+   "option": "A",
+   "type": "Acier",
+   "palette": [
+    "#8A3420",
+    "#E07A55",
+    "#D8E0EA",
+    "#6C7888"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Pincelet",
+     "dex": "Pousse les galets vers le ciel avec ses petites pinces.",
+     "brief": "Petit crabe rouge corail, pinces levées vers le haut, yeux pédonculés."
+    },
+    {
+     "stage": 2,
+     "name": "Pinçacier",
+     "dex": "Ses pinces se recouvrent d'acier poli.",
+     "brief": "Crabe plus grand, pinces métalliques chromées, liseré acier sur la carapace."
+    },
+    {
+     "stage": 3,
+     "name": "Crabastion",
+     "dex": "Une forteresse à pattes. Sa carapace a des créneaux.",
+     "brief": "Crabe-forteresse, carapace à créneaux de château en acier, pinces énormes levées en presse inclinée."
+    }
+   ]
+  },
+  {
+   "id": "enclumot",
+   "group": "incline",
+   "option": "B",
+   "type": "Acier",
+   "palette": [
+    "#3A3A44",
+    "#6E6E7A",
+    "#FF7A1A",
+    "#F2B544"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Enclumot",
+     "dex": "Petit golem né d'une enclume tombée. Il soulève tout ce qui traîne.",
+     "brief": "Golem minuscule en forme d'enclume, bras courts, yeux-rivets, patine grise."
+    },
+    {
+     "stage": 2,
+     "name": "Martelor",
+     "dex": "Ses poings sont devenus des marteaux de forge.",
+     "brief": "Golem trapu, poings-marteaux, torse d'enclume, étincelles sur les jointures."
+    },
+    {
+     "stage": 3,
+     "name": "Forgeroc",
+     "dex": "Chaque poussée de Forgeroc fait jaillir une gerbe d'étincelles.",
+     "brief": "Grand golem de forge, cheminée sur le dos, torse d'enclume incandescent, bras levés."
+    }
+   ]
+  },
+  {
+   "id": "gorillot",
+   "group": "dips",
+   "option": "A",
+   "type": "Choc",
+   "palette": [
+    "#24242B",
+    "#55555F",
+    "#C9CDD6",
+    "#C2410C"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Gorillot",
+     "dex": "Se hisse sur les branches à la force des bras.",
+     "brief": "Bébé gorille gris anthracite, gros avant-bras, visage expressif, ventre clair."
+    },
+    {
+     "stage": 2,
+     "name": "Gorillard",
+     "dex": "Ses triceps font trembler les troncs.",
+     "brief": "Gorille musclé, épaules massives, bandeaux aux poignets, poitrail marqué."
+    },
+    {
+     "stage": 3,
+     "name": "Dorsargent",
+     "dex": "Son dos argenté impose le respect à toute la jungle.",
+     "brief": "Gorille colossal à dos argenté, bracelets de cuivre, appuis sur les poings, regard calme."
+    }
+   ]
+  },
+  {
+   "id": "varanou",
+   "group": "dips",
+   "option": "B",
+   "type": "Terre",
+   "palette": [
+    "#7A5A2E",
+    "#CDA86A",
+    "#E3CFA3",
+    "#D94A5A"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Varanou",
+     "dex": "Se redresse sur ses pattes avant pour guetter.",
+     "brief": "Petit varan sable, pattes avant tendues, langue fourchue rose, rayures discrètes."
+    },
+    {
+     "stage": 2,
+     "name": "Varanox",
+     "dex": "Ses épaules s'épaississent à chaque appui.",
+     "brief": "Varan robuste, crête d'écailles brunes sur le dos, épaules larges."
+    },
+    {
+     "stage": 3,
+     "name": "Komodor",
+     "dex": "Sa queue fend la terre sèche d'un seul coup.",
+     "brief": "Grand varan cuirassé, écailles-pépites ivoire, queue lourde, griffes noires."
+    }
+   ]
+  },
+  {
+   "id": "griffi",
+   "group": "tractions",
+   "option": "A",
+   "type": "Air",
+   "palette": [
+    "#C08A3E",
+    "#F2D16B",
+    "#FFFFFF",
+    "#5E4422"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Griffi",
+     "dex": "Boule de plumes qui s'accroche partout.",
+     "brief": "Bébé griffon : tête d'aiglon, corps de lionceau, petites ailes, griffes agrippées à une branche."
+    },
+    {
+     "stage": 2,
+     "name": "Griffal",
+     "dex": "Ses ailes se gonflent à chaque traction propre.",
+     "brief": "Griffon adolescent, grandes ailes, dos en V, plumes fauves."
+    },
+    {
+     "stage": 3,
+     "name": "Aérogriff",
+     "dex": "Plane au-dessus des barres. Porte son poids sans y penser.",
+     "brief": "Griffon majestueux, envergure énorme, plumes dorées, posture suspendue en traction."
+    }
+   ]
+  },
+  {
+   "id": "grimpouille",
+   "group": "tractions",
+   "option": "B",
+   "type": "Roc",
+   "palette": [
+    "#6B7280",
+    "#9CA3AF",
+    "#E5E7EB",
+    "#2F4E8C"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Grimpouille",
+     "dex": "Lynx minuscule qui escalade les rochers avant de savoir marcher.",
+     "brief": "Petit lynx gris, pinceaux d'oreilles, grosses pattes, griffes de grimpeur."
+    },
+    {
+     "stage": 2,
+     "name": "Escalynx",
+     "dex": "Ses dorsaux lui permettent de se hisser sur n'importe quelle paroi.",
+     "brief": "Lynx musclé, dos large, pelage tacheté gris-bleu, collier de cordes."
+    },
+    {
+     "stage": 3,
+     "name": "Cimelynx",
+     "dex": "Vit au sommet des falaises. Personne ne l'a vu grimper, seulement arriver.",
+     "brief": "Grand lynx de montagne, plaques de roche sur les épaules, crinière de neige, yeux glacier."
+    }
+   ]
+  },
+  {
+   "id": "chiropi",
+   "group": "tirage_vertical",
+   "option": "A",
+   "type": "Ombre",
+   "palette": [
+    "#3B2A55",
+    "#6E4F9A",
+    "#D94A5A",
+    "#E8E1F0"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Chiropi",
+     "dex": "Se suspend la tête en bas, dos serré.",
+     "brief": "Petite chauve-souris violette, grandes oreilles, ailes repliées, crocs mignons."
+    },
+    {
+     "stage": 2,
+     "name": "Chiroval",
+     "dex": "Tire la nuit vers le sol à la force des ailes.",
+     "brief": "Chauve-souris plus grande, ailes larges, dorsaux visibles, yeux rouges."
+    },
+    {
+     "stage": 3,
+     "name": "Noctarque",
+     "dex": "Ses ailes couvrent le ciel d'un seul battement.",
+     "brief": "Chauve-souris royale, cape d'ailes, couronne d'oreilles, motifs d'étoiles."
+    }
+   ]
+  },
+  {
+   "id": "aiglonnet",
+   "group": "tirage_vertical",
+   "option": "B",
+   "type": "Air",
+   "palette": [
+    "#5E4422",
+    "#F2D16B",
+    "#FFFFFF",
+    "#4FA3E0"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Aiglonnet",
+     "dex": "Bat des ailes vers le bas pour décoller, encore et encore.",
+     "brief": "Aiglon duveteux blanc et brun, bec jaune, ailes courtes."
+    },
+    {
+     "stage": 2,
+     "name": "Serrevent",
+     "dex": "Ses serres tirent l'air vers lui comme une corde.",
+     "brief": "Aigle jeune adulte, serres puissantes, plumes brunes, sourcils marqués."
+    },
+    {
+     "stage": 3,
+     "name": "Tempestaigle",
+     "dex": "Chaque battement de Tempestaigle soulève une tempête.",
+     "brief": "Grand aigle, ailes à pointes d'éclair, tête blanche, nuages autour des ailes."
+    }
+   ]
+  },
+  {
+   "id": "pieuvrette",
+   "group": "tirage_horizontal",
+   "option": "A",
+   "type": "Eau",
+   "palette": [
+    "#C2410C",
+    "#E07A55",
+    "#F2C9A8",
+    "#0F4C75"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Pieuvrette",
+     "dex": "Tire les coquillages vers elle, un tentacule à la fois.",
+     "brief": "Petite pieuvre corail, gros yeux, tentacules courts enroulés."
+    },
+    {
+     "stage": 2,
+     "name": "Tentacorde",
+     "dex": "Ses tentacules sont devenus des cordes de rameur.",
+     "brief": "Pieuvre musclée, tentacules épais comme des cordages, motifs de nœuds marins."
+    },
+    {
+     "stage": 3,
+     "name": "Krakenrame",
+     "dex": "Il rame avec huit bras à la fois et remonte les navires.",
+     "brief": "Pieuvre géante, tentacules-avirons, ventouses lumineuses, cicatrices de marin."
+    }
+   ]
+  },
+  {
+   "id": "morsillon",
+   "group": "tirage_horizontal",
+   "option": "B",
+   "type": "Glace",
+   "palette": [
+    "#B07A6A",
+    "#E3B5A4",
+    "#BFE6F5",
+    "#FFFFFF"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Morsillon",
+     "dex": "Se hisse sur la banquise en tirant avec ses défenses.",
+     "brief": "Bébé morse rond, petites défenses, moustache, peau rosée."
+    },
+    {
+     "stage": 2,
+     "name": "Morsabre",
+     "dex": "Ses défenses s'allongent comme des sabres de glace.",
+     "brief": "Morse robuste, défenses longues givrées, épaules massives."
+    },
+    {
+     "stage": 3,
+     "name": "Banquisor",
+     "dex": "Il tire des icebergs entiers jusqu'à la côte.",
+     "brief": "Morse colossal, défenses de cristal, carapace de glace sur le dos, souffle de givre."
+    }
+   ]
+  },
+  {
+   "id": "rorquelet",
+   "group": "pendle_row",
+   "option": "A",
+   "type": "Eau",
+   "palette": [
+    "#2F4E6E",
+    "#6C8EAD",
+    "#E8F7F5",
+    "#46C6E0"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Rorquelet",
+     "dex": "Petit baleineau qui nage en ramant de ses nageoires.",
+     "brief": "Baleineau bleu-gris, sillons blancs sous la gorge, nageoires pectorales longues."
+    },
+    {
+     "stage": 2,
+     "name": "Rorquefond",
+     "dex": "Chaque coup de nageoire le propulse d'une longueur de bateau.",
+     "brief": "Baleine à bosse jeune, nageoires très longues, bosses sur la tête."
+    },
+    {
+     "stage": 3,
+     "name": "Léviarorque",
+     "dex": "Ses remontées font naître des vagues jusqu'à l'horizon.",
+     "brief": "Baleine géante, nageoires comme des rames, motifs de constellations, jet d'eau en couronne."
+    }
+   ]
+  },
+  {
+   "id": "castorame",
+   "group": "pendle_row",
+   "option": "B",
+   "type": "Terre",
+   "palette": [
+    "#5A3A22",
+    "#8B5A2E",
+    "#F2B544",
+    "#7FB8F0"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Castorame",
+     "dex": "Rame avec sa queue plate pour traverser la rivière.",
+     "brief": "Petit castor brun, queue plate écaillée, dents orange, ventre clair."
+    },
+    {
+     "stage": 2,
+     "name": "Castoral",
+     "dex": "Tire des troncs entiers jusqu'à son barrage.",
+     "brief": "Castor costaud, avant-bras épais, gilet de branches."
+    },
+    {
+     "stage": 3,
+     "name": "Barragor",
+     "dex": "Ses barrages retiennent des lacs entiers.",
+     "brief": "Castor massif, armure de rondins, queue-pagaie énorme, casque de boue séchée."
+    }
+   ]
+  },
+  {
+   "id": "groinet",
+   "group": "rdl",
+   "option": "A",
+   "type": "Terre",
+   "palette": [
+    "#4A3020",
+    "#8B5A2E",
+    "#EDE3CF",
+    "#C2410C"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Groinet",
+     "dex": "Fouille le sol, dos bien plat.",
+     "brief": "Marcassin rayé brun et crème, groin rose, dos plat."
+    },
+    {
+     "stage": 2,
+     "name": "Sanglard",
+     "dex": "Ses ischios tirent des souches entières.",
+     "brief": "Sanglier musclé, crinière dorsale, petites défenses, cuisses puissantes."
+    },
+    {
+     "stage": 3,
+     "name": "Défensor",
+     "dex": "Déracine les arbres d'un coup de hanches.",
+     "brief": "Sanglier colossal, défenses en croissant, plaques de terre sur le dos, posture de charnière de hanche."
+    }
+   ]
+  },
+  {
+   "id": "racinou",
+   "group": "rdl",
+   "option": "B",
+   "type": "Plante",
+   "palette": [
+    "#5A3A22",
+    "#3E7C4A",
+    "#8CC66B",
+    "#C08A3E"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Racinou",
+     "dex": "Souche vivante qui s'arrache du sol chaque matin.",
+     "brief": "Petite souche à yeux ronds, racines comme des pattes, bourgeon sur la tête."
+    },
+    {
+     "stage": 2,
+     "name": "Souchard",
+     "dex": "Ses racines tirent la terre comme des câbles.",
+     "brief": "Souche trapue, racines épaisses enroulées, mousse sur les épaules."
+    },
+    {
+     "stage": 3,
+     "name": "Chênegrave",
+     "dex": "Quand il se redresse, la forêt entière se redresse avec lui.",
+     "brief": "Chêne-golem, tronc dos droit, racines-jambes ancrées, couronne de feuilles d'automne."
+    }
+   ]
+  },
+  {
+   "id": "albatrot",
+   "group": "elevations",
+   "option": "A",
+   "type": "Air",
+   "palette": [
+    "#FFFFFF",
+    "#9CA3AF",
+    "#F2C9A8",
+    "#4FA3E0"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Albatrot",
+     "dex": "Lève ses ailes sur les côtés pour sentir le vent.",
+     "brief": "Petit albatros blanc, ailes tenues à l'horizontale, bec rosé."
+    },
+    {
+     "stage": 2,
+     "name": "Albaplane",
+     "dex": "Ses épaules tiennent ses ailes ouvertes des heures.",
+     "brief": "Albatros adulte, envergure très large, deltoïdes marqués, bord d'ailes gris."
+    },
+    {
+     "stage": 3,
+     "name": "Envergor",
+     "dex": "Il fait le tour du monde sans un battement d'aile.",
+     "brief": "Albatros géant, ailes interminables, motifs de rose des vents, aura de vent."
+    }
+   ]
+  },
+  {
+   "id": "libellame",
+   "group": "elevations",
+   "option": "B",
+   "type": "Insecte",
+   "palette": [
+    "#2E9E5B",
+    "#46C6E0",
+    "#F2B544",
+    "#E8F7F5"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Libellame",
+     "dex": "Tient ses ailes parfaitement à l'horizontale.",
+     "brief": "Petite libellule vert émeraude, 4 ailes translucides, gros yeux."
+    },
+    {
+     "stage": 2,
+     "name": "Libelfuse",
+     "dex": "Ses ailes vibrent si vite qu'elles sifflent.",
+     "brief": "Libellule élancée, ailes à nervures dorées, corps segmenté bleu."
+    },
+    {
+     "stage": 3,
+     "name": "Odonarque",
+     "dex": "Seigneur des marais, il reste immobile dans les airs.",
+     "brief": "Grande libellule royale, ailes-lames irisées, couronne d'antennes."
+    }
+   ]
+  },
+  {
+   "id": "hiboulet",
+   "group": "rear_delt",
+   "option": "A",
+   "type": "Ombre",
+   "palette": [
+    "#4B5563",
+    "#9CA3AF",
+    "#E0A100",
+    "#1B1B22"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Hiboulet",
+     "dex": "Tourne la tête pour surveiller ses arrières.",
+     "brief": "Petit hibou gris, aigrettes, gros yeux orange, plumes ébouriffées."
+    },
+    {
+     "stage": 2,
+     "name": "Chevêchard",
+     "dex": "Ses ailes battent vers l'arrière en silence.",
+     "brief": "Hibou robuste, épaules arrière marquées, plumage moucheté."
+    },
+    {
+     "stage": 3,
+     "name": "Nyctiduc",
+     "dex": "Rien ne lui échappe, même dans son dos.",
+     "brief": "Grand-duc imposant, cape de plumes, aigrettes en couronne, yeux dorés lumineux."
+    }
+   ]
+  },
+  {
+   "id": "scorpiot",
+   "group": "rear_delt",
+   "option": "B",
+   "type": "Poison",
+   "palette": [
+    "#4C1D95",
+    "#8B5CF6",
+    "#A3E635",
+    "#1B1B22"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Scorpiot",
+     "dex": "Ramène sa queue vers l'arrière avant de frapper.",
+     "brief": "Petit scorpion violet, pinces arrondies, queue courte."
+    },
+    {
+     "stage": 2,
+     "name": "Scorpidard",
+     "dex": "Son dard part toujours de derrière l'épaule.",
+     "brief": "Scorpion musclé, queue arquée, plaques d'armure dorsales."
+    },
+    {
+     "stage": 3,
+     "name": "Scorptyran",
+     "dex": "Il protège ses arrières mieux que quiconque.",
+     "brief": "Scorpion géant, carapace couronnée, dard cristallin violet, pinces massives."
+    }
+   ]
+  },
+  {
+   "id": "marteline",
+   "group": "curl_marteau",
+   "option": "A",
+   "type": "Air",
+   "palette": [
+    "#3E7C4A",
+    "#8CC66B",
+    "#D94A5A",
+    "#F2D16B"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Marteline",
+     "dex": "Frappe les troncs en gardant le bec bien droit.",
+     "brief": "Petit pic-vert, calotte rouge, bec droit, plumes vertes."
+    },
+    {
+     "stage": 2,
+     "name": "Martepic",
+     "dex": "Ses coups de bec résonnent dans toute la forêt.",
+     "brief": "Pic-vert robuste, bec en marteau, avant-bras d'ailes épais."
+    },
+    {
+     "stage": 3,
+     "name": "Picognard",
+     "dex": "Un seul coup de bec fend un tronc en deux.",
+     "brief": "Grand pic, bec en tête de marteau, plumage vert sombre et rouge, posture de frappe."
+    }
+   ]
+  },
+  {
+   "id": "tatouroc",
+   "group": "curl_marteau",
+   "option": "B",
+   "type": "Roc",
+   "palette": [
+    "#6B7280",
+    "#9CA3AF",
+    "#C08A3E",
+    "#E5E7EB"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Tatouroc",
+     "dex": "Se roule en boule et se relève d'un coup de bras.",
+     "brief": "Petit tatou à bandes grises, museau long, grosses pattes avant."
+    },
+    {
+     "stage": 2,
+     "name": "Tatoubloc",
+     "dex": "Ses bandes de carapace sont devenues de la pierre.",
+     "brief": "Tatou trapu, plaques de roche, griffes épaisses."
+    },
+    {
+     "stage": 3,
+     "name": "Armadillor",
+     "dex": "Roulé en boule, il dévale les montagnes comme un rocher.",
+     "brief": "Tatou géant, carapace de granit veinée d'or, griffes-pioches."
+    }
+   ]
+  },
+  {
+   "id": "ourseau",
+   "group": "curl_pupitre",
+   "option": "A",
+   "type": "Choc",
+   "palette": [
+    "#5A3A22",
+    "#8B5A2E",
+    "#F2D16B",
+    "#C2410C"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Ourseau",
+     "dex": "Plie les bras pour attraper le miel en hauteur.",
+     "brief": "Ourson brun, museau clair, pattes avant rondes."
+    },
+    {
+     "stage": 2,
+     "name": "Oursolide",
+     "dex": "Ses biceps arrachent les ruches des arbres.",
+     "brief": "Ours musclé, bras épais, bandeau, ventre clair."
+    },
+    {
+     "stage": 3,
+     "name": "Ursaltère",
+     "dex": "Il soulève des rochers comme des haltères.",
+     "brief": "Grand ours, bras énormes, bracelets de fer, cicatrice sur le museau."
+    }
+   ]
+  },
+  {
+   "id": "mantisse",
+   "group": "curl_pupitre",
+   "option": "B",
+   "type": "Insecte",
+   "palette": [
+    "#3E7C4A",
+    "#8CC66B",
+    "#D8E0EA",
+    "#F2D16B"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Mantisse",
+     "dex": "Replie ses pattes avant avec une précision parfaite.",
+     "brief": "Petite mante verte, pattes ravisseuses repliées, tête triangulaire."
+    },
+    {
+     "stage": 2,
+     "name": "Mantilame",
+     "dex": "Ses pattes avant se plient comme des lames.",
+     "brief": "Mante élancée, pattes-lames, ailes repliées."
+    },
+    {
+     "stage": 3,
+     "name": "Sabremante",
+     "dex": "Elle tranche l'air en un seul mouvement contrôlé.",
+     "brief": "Grande mante, pattes-sabres argentées, ailes en cape, posture de garde."
+    }
+   ]
+  },
+  {
+   "id": "heronot",
+   "group": "curl_incline",
+   "option": "A",
+   "type": "Eau",
+   "palette": [
+    "#6C8EAD",
+    "#D8E0EA",
+    "#F2D16B",
+    "#0F4C75"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Héronot",
+     "dex": "Tend le cou vers l'arrière avant de piquer.",
+     "brief": "Petit héron gris-bleu, long cou, pattes fines."
+    },
+    {
+     "stage": 2,
+     "name": "Héronlance",
+     "dex": "Son bec part comme une lance.",
+     "brief": "Héron adulte, bec-lance, plumes en aigrette."
+    },
+    {
+     "stage": 3,
+     "name": "Aigrétoile",
+     "dex": "Il pêche les reflets d'étoiles à la surface du lac.",
+     "brief": "Grand héron argenté, aigrettes lumineuses, bec en cristal."
+    }
+   ]
+  },
+  {
+   "id": "frelonet",
+   "group": "curl_incline",
+   "option": "B",
+   "type": "Insecte",
+   "palette": [
+    "#C08A3E",
+    "#F2B544",
+    "#1B1B22",
+    "#FFFFFF"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Frelonet",
+     "dex": "Plie ses pattes avant pour porter sa récolte.",
+     "brief": "Petit frelon jaune et brun, ailes rapides, antennes courtes."
+    },
+    {
+     "stage": 2,
+     "name": "Frelondard",
+     "dex": "Son dard pique sous tous les angles.",
+     "brief": "Frelon costaud, pattes avant épaisses, dard visible."
+    },
+    {
+     "stage": 3,
+     "name": "Vespérator",
+     "dex": "Il règne sur un essaim entier au crépuscule.",
+     "brief": "Grand frelon royal, armure orange et noir, couronne, dard doré."
+    }
+   ]
+  },
+  {
+   "id": "lianou",
+   "group": "curl_poulie",
+   "option": "A",
+   "type": "Plante",
+   "palette": [
+    "#3E7C4A",
+    "#8CC66B",
+    "#E0567A",
+    "#5A3A22"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Lianou",
+     "dex": "Se balance de liane en liane en tirant d'un bras.",
+     "brief": "Petit singe vert mousse, longue queue enroulée, fleur derrière l'oreille."
+    },
+    {
+     "stage": 2,
+     "name": "Liansinge",
+     "dex": "Ses bras sont devenus des lianes.",
+     "brief": "Singe agile, bras lianes, feuilles sur les épaules."
+    },
+    {
+     "stage": 3,
+     "name": "Sylvorang",
+     "dex": "Il tire la forêt entière vers lui d'un seul bras.",
+     "brief": "Grand primate végétal, bras-lianes très longs, crinière de feuilles, fruits lumineux."
+    }
+   ]
+  },
+  {
+   "id": "arachnis",
+   "group": "curl_poulie",
+   "option": "B",
+   "type": "Insecte",
+   "palette": [
+    "#1B2A4A",
+    "#4FA3E0",
+    "#D8E0EA",
+    "#F2B544"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Arachnis",
+     "dex": "Remonte son fil en tirant d'une patte.",
+     "brief": "Petite araignée bleu nuit, gros yeux brillants, fil argenté."
+    },
+    {
+     "stage": 2,
+     "name": "Arachnoeud",
+     "dex": "Ses fils sont plus solides que des câbles de poulie.",
+     "brief": "Araignée costaud, abdomen motif de poulie, fils tendus."
+    },
+    {
+     "stage": 3,
+     "name": "Tisserak",
+     "dex": "Sa toile soutient un pont entier.",
+     "brief": "Grande araignée tisserande, pattes en câbles d'acier, toile-mandala lumineuse."
+    }
+   ]
+  },
+  {
+   "id": "lezarfouet",
+   "group": "triceps_ext",
+   "option": "A",
+   "type": "Terre",
+   "palette": [
+    "#C08A3E",
+    "#8B5A2E",
+    "#3E7C4A",
+    "#F2D16B"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Lézarfouet",
+     "dex": "Fouette l'air de sa queue, bras tendus au-dessus de la tête.",
+     "brief": "Petit lézard ocre, queue fouet, collerette."
+    },
+    {
+     "stage": 2,
+     "name": "Iguanfouet",
+     "dex": "Sa queue claque comme un fouet de dresseur.",
+     "brief": "Iguane robuste, crête dorsale, queue longue rayée."
+    },
+    {
+     "stage": 3,
+     "name": "Fouetdrake",
+     "dex": "Le claquement de sa queue s'entend à des kilomètres.",
+     "brief": "Grand lézard draconique, queue-fouet à pointe de pierre, crête de pics."
+    }
+   ]
+  },
+  {
+   "id": "espadou",
+   "group": "triceps_ext",
+   "option": "B",
+   "type": "Eau",
+   "palette": [
+    "#0F4C75",
+    "#4FA3E0",
+    "#D8E0EA",
+    "#F2B544"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Espadou",
+     "dex": "Pointe son rostre vers le ciel avant de bondir.",
+     "brief": "Petit espadon bleu, rostre court, nageoire dorsale en voile."
+    },
+    {
+     "stage": 2,
+     "name": "Espadard",
+     "dex": "Son rostre s'allonge comme une épée.",
+     "brief": "Espadon élancé, rostre long, voile dorsale haute."
+    },
+    {
+     "stage": 3,
+     "name": "Rostrelame",
+     "dex": "Il tranche les vagues en ligne droite.",
+     "brief": "Grand espadon, rostre-lame argenté, voile dorsale étincelante."
+    }
+   ]
+  },
+  {
+   "id": "cornelan",
+   "group": "au_front",
+   "option": "A",
+   "type": "Roc",
+   "palette": [
+    "#5A3A22",
+    "#8B5A2E",
+    "#8C8F99",
+    "#FFFFFF"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Cornelan",
+     "dex": "Ses premiers bois pèsent déjà lourd sur son front.",
+     "brief": "Faon d'élan, petits bois, pelage brun, museau doux."
+    },
+    {
+     "stage": 2,
+     "name": "Élancorne",
+     "dex": "Ses bois s'élargissent comme une barre au-dessus de sa tête.",
+     "brief": "Élan adulte, bois larges en pelle, cou puissant."
+    },
+    {
+     "stage": 3,
+     "name": "Majestélan",
+     "dex": "Ses bois de pierre portent la neige de tout l'hiver.",
+     "brief": "Élan colossal, bois de roche gravés, cape de neige, regard calme."
+    }
+   ]
+  },
+  {
+   "id": "buceroche",
+   "group": "au_front",
+   "option": "B",
+   "type": "Air",
+   "palette": [
+    "#1B1B22",
+    "#FFFFFF",
+    "#F97316",
+    "#F2B544"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Bucéroche",
+     "dex": "Porte un casque sur le bec et tient la tête droite.",
+     "brief": "Petit calao noir et blanc, casque orange sur le bec."
+    },
+    {
+     "stage": 2,
+     "name": "Calaoroc",
+     "dex": "Son casque s'épaissit à chaque effort.",
+     "brief": "Calao adulte, casque massif, ailes noires."
+    },
+    {
+     "stage": 3,
+     "name": "Casqueroc",
+     "dex": "Son casque de pierre fend les nuages.",
+     "brief": "Grand calao, casque de pierre sculpté, plumes de queue longues, ailes en éventail."
+    }
+   ]
+  },
+  {
+   "id": "taurillon",
+   "group": "leg_extension",
+   "option": "A",
+   "type": "Roc",
+   "palette": [
+    "#6B7280",
+    "#9CA3AF",
+    "#C08A3E",
+    "#1B1B22"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Taurillon",
+     "dex": "Donne des coups de genou aux cailloux.",
+     "brief": "Petit taureau gris, sabots ronds, cornes naissantes."
+    },
+    {
+     "stage": 2,
+     "name": "Taurock",
+     "dex": "Ses quadriceps fissurent la roche.",
+     "brief": "Taureau bipède, cuisses énormes, plaques de roche aux genoux."
+    },
+    {
+     "stage": 3,
+     "name": "Minotonne",
+     "dex": "Chaque pas fait trembler la vallée.",
+     "brief": "Minotaure de pierre, quadriceps massifs, cornes de granite, anneau au museau."
+    }
+   ]
+  },
+  {
+   "id": "ressortin",
+   "group": "leg_extension",
+   "option": "B",
+   "type": "Eau",
+   "palette": [
+    "#3E7C4A",
+    "#8CC66B",
+    "#4FA3E0",
+    "#F2D16B"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Ressortin",
+     "dex": "Détend ses pattes comme un ressort.",
+     "brief": "Petite grenouille verte, cuisses repliées, gros yeux."
+    },
+    {
+     "stage": 2,
+     "name": "Détentor",
+     "dex": "Il saute par-dessus les nénuphars d'un seul coup.",
+     "brief": "Grenouille musclée, cuisses épaisses, motifs bleus."
+    },
+    {
+     "stage": 3,
+     "name": "Catapulte",
+     "dex": "Sa détente l'envoie au-dessus des arbres.",
+     "brief": "Grande grenouille athlétique, cuisses-ressorts, crête de nageoire, peau irisée."
+    }
+   ]
+  },
+  {
+   "id": "lievron",
+   "group": "leg_curl",
+   "option": "A",
+   "type": "Air",
+   "palette": [
+    "#C08A3E",
+    "#EDE3CF",
+    "#4FA3E0",
+    "#5A3A22"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Lièvron",
+     "dex": "Ramène ses talons vers lui avant chaque bond.",
+     "brief": "Levraut beige, longues oreilles, pattes arrière repliées."
+    },
+    {
+     "stage": 2,
+     "name": "Lièvreclair",
+     "dex": "Ses ischios le propulsent comme un éclair.",
+     "brief": "Lièvre élancé, oreilles en flèche, pattes arrière puissantes."
+    },
+    {
+     "stage": 3,
+     "name": "Lepusprint",
+     "dex": "Personne ne l'a jamais vu à l'arrêt.",
+     "brief": "Grand lièvre aérodynamique, traînée de vent, oreilles en ailerons."
+    }
+   ]
+  },
+  {
+   "id": "autruchon",
+   "group": "leg_curl",
+   "option": "B",
+   "type": "Terre",
+   "palette": [
+    "#1B1B22",
+    "#FFFFFF",
+    "#E3B5A4",
+    "#C08A3E"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Autruchon",
+     "dex": "Court en ramenant ses pattes très haut.",
+     "brief": "Bébé autruche duveteux gris, long cou, grandes pattes."
+    },
+    {
+     "stage": 2,
+     "name": "Autrufonce",
+     "dex": "Ses foulées labourent la savane.",
+     "brief": "Autruche adulte, cuisses musclées, plumes noires et blanches."
+    },
+    {
+     "stage": 3,
+     "name": "Struthor",
+     "dex": "Un coup de patte de Struthor fend la terre sèche.",
+     "brief": "Autruche géante, pattes cuirassées, griffes de pierre, plumage en éventail."
+    }
+   ]
+  },
+  {
+   "id": "gibbonne",
+   "group": "pendulum",
+   "option": "A",
+   "type": "Plante",
+   "palette": [
+    "#C08A3E",
+    "#F2D16B",
+    "#3E7C4A",
+    "#1B1B22"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Gibbonne",
+     "dex": "Se balance d'avant en arrière toute la journée.",
+     "brief": "Petit gibbon doré, bras très longs, visage noir."
+    },
+    {
+     "stage": 2,
+     "name": "Gibbalance",
+     "dex": "Son balancement est réglé comme une horloge.",
+     "brief": "Gibbon athlétique, jambes fléchies, pelage feuillu."
+    },
+    {
+     "stage": 3,
+     "name": "Arborythme",
+     "dex": "Toute la canopée bat au rythme de ses squats.",
+     "brief": "Grand primate-arbre, jambes puissantes, lianes rythmées, feuilles dorées."
+    }
+   ]
+  },
+  {
+   "id": "horlodon",
+   "group": "pendulum",
+   "option": "B",
+   "type": "Acier",
+   "palette": [
+    "#B8860B",
+    "#F2D16B",
+    "#3A3A44",
+    "#4FA3E0"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Horlodon",
+     "dex": "Un petit golem-horloge qui fléchit à chaque tic-tac.",
+     "brief": "Golem de laiton en forme de pendule, cadran au ventre, petites jambes."
+    },
+    {
+     "stage": 2,
+     "name": "Balancier",
+     "dex": "Son balancier ne s'arrête jamais.",
+     "brief": "Golem de laiton plus grand, balancier visible dans le torse, engrenages aux genoux."
+    },
+    {
+     "stage": 3,
+     "name": "Chronogolem",
+     "dex": "Il plie le temps à chaque descente.",
+     "brief": "Grand golem d'horlogerie, cadrans lumineux, jambes-pistons, aiguilles en cornes."
+    }
+   ]
+  },
+  {
+   "id": "trompillon",
+   "group": "presse",
+   "option": "A",
+   "type": "Terre",
+   "palette": [
+    "#6B7280",
+    "#9CA3AF",
+    "#EDE3CF",
+    "#5A3A22"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Trompillon",
+     "dex": "Pousse le sol de ses grosses pattes.",
+     "brief": "Éléphanteau gris, grandes oreilles, trompe courte."
+    },
+    {
+     "stage": 2,
+     "name": "Trompachyde",
+     "dex": "Ses jambes sont des colonnes.",
+     "brief": "Éléphant robuste, jambes épaisses, défenses courtes."
+    },
+    {
+     "stage": 3,
+     "name": "Mammouthon",
+     "dex": "Il repousse les montagnes qui gênent sa route.",
+     "brief": "Mammouth colossal, laine épaisse, défenses spiralées, pattes en piliers."
+    }
+   ]
+  },
+  {
+   "id": "hydraulix",
+   "group": "presse",
+   "option": "B",
+   "type": "Acier",
+   "palette": [
+    "#F2B544",
+    "#1B1B22",
+    "#D8E0EA",
+    "#3FB950"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Hydraulix",
+     "dex": "Petit golem à vérin qui pousse sans jamais s'arrêter.",
+     "brief": "Golem compact jaune industriel, un vérin hydraulique par jambe, voyant vert sur le front."
+    },
+    {
+     "stage": 2,
+     "name": "Pistonix",
+     "dex": "Ses pistons développent des tonnes de poussée.",
+     "brief": "Golem plus grand, pistons chromés, tuyaux hydrauliques, plaques jaunes et noires."
+    },
+    {
+     "stage": 3,
+     "name": "Vérinator",
+     "dex": "Il soulève des immeubles sur ses jambes.",
+     "brief": "Golem industriel géant, vérins énormes, bandes de sécurité jaunes et noires, manomètres."
+    }
+   ]
+  },
+  {
+   "id": "tenaillon",
+   "group": "adducteurs",
+   "option": "A",
+   "type": "Insecte",
+   "palette": [
+    "#4A2C14",
+    "#8B5A2E",
+    "#F2B544",
+    "#1B1B22"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Tenaillon",
+     "dex": "Serre tout entre ses mandibules.",
+     "brief": "Petit lucane brun, mandibules en tenaille."
+    },
+    {
+     "stage": 2,
+     "name": "Lucanox",
+     "dex": "Ses mandibules se referment comme un étau.",
+     "brief": "Lucane robuste, mandibules longues, carapace brillante."
+    },
+    {
+     "stage": 3,
+     "name": "Titanlucane",
+     "dex": "Rien ne s'échappe de son étreinte.",
+     "brief": "Lucane géant, mandibules-pinces dorées, carapace en armure."
+    }
+   ]
+  },
+  {
+   "id": "anacondo",
+   "group": "adducteurs",
+   "option": "B",
+   "type": "Plante",
+   "palette": [
+    "#3E7C4A",
+    "#8CC66B",
+    "#5A3A22",
+    "#E0567A"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Anacondo",
+     "dex": "S'enroule autour des branches et serre doucement.",
+     "brief": "Petit serpent vert à taches brunes, yeux ronds."
+    },
+    {
+     "stage": 2,
+     "name": "Serpentrave",
+     "dex": "Il serre les troncs comme une entrave.",
+     "brief": "Serpent épais, motifs de lianes, écailles mousse."
+    },
+    {
+     "stage": 3,
+     "name": "Étreignor",
+     "dex": "Son étreinte fait plier les arbres.",
+     "brief": "Serpent géant, écailles-feuilles, fleurs sur le dos, anneaux puissants."
+    }
+   ]
+  },
+  {
+   "id": "gazellou",
+   "group": "mollets",
+   "option": "A",
+   "type": "Air",
+   "palette": [
+    "#C08A3E",
+    "#EDE3CF",
+    "#4FA3E0",
+    "#1B1B22"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Gazellou",
+     "dex": "Rebondit sur la pointe des sabots.",
+     "brief": "Petite gazelle fauve, pattes fines, cornes courtes."
+    },
+    {
+     "stage": 2,
+     "name": "Gazelleste",
+     "dex": "Ses mollets la font bondir par-dessus les buissons.",
+     "brief": "Gazelle élancée, cornes annelées, bande noire sur le flanc."
+    },
+    {
+     "stage": 3,
+     "name": "Saltazur",
+     "dex": "Elle bondit si haut qu'elle touche les nuages.",
+     "brief": "Grande gazelle céleste, cornes lyre lumineuses, sabots d'azur, traînée de vent."
+    }
+   ]
+  },
+  {
+   "id": "cabrinou",
+   "group": "mollets",
+   "option": "B",
+   "type": "Roc",
+   "palette": [
+    "#FFFFFF",
+    "#9CA3AF",
+    "#5A3A22",
+    "#8C8F99"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Cabrinou",
+     "dex": "Saute de rocher en rocher sur la pointe des sabots.",
+     "brief": "Chevreau blanc, petites cornes, sabots noirs."
+    },
+    {
+     "stage": 2,
+     "name": "Cabriroc",
+     "dex": "Il grimpe les parois les plus raides.",
+     "brief": "Chèvre de montagne, barbe, cornes courbes, sabots de pierre."
+    },
+    {
+     "stage": 3,
+     "name": "Bouquetitan",
+     "dex": "Il tient en équilibre sur une seule pointe de roche.",
+     "brief": "Bouquetin colossal, cornes géantes annelées de roche, crinière de neige."
+    }
+   ]
+  },
+  {
+   "id": "coquillon",
+   "group": "crunch_poulie",
+   "option": "A",
+   "type": "Eau",
+   "palette": [
+    "#C2410C",
+    "#E07A55",
+    "#F2C9A8",
+    "#46C6E0"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Coquillon",
+     "dex": "Se recroqueville dans sa coquille à chaque vague.",
+     "brief": "Petit bernard-l'ermite rouge dans une coquille spirale."
+    },
+    {
+     "stage": 2,
+     "name": "Coquilleur",
+     "dex": "Sa coquille devient plus lourde, ses abdos aussi.",
+     "brief": "Bernard-l'ermite costaud, coquille bombée de corail."
+    },
+    {
+     "stage": 3,
+     "name": "Carapagure",
+     "dex": "Il porte un récif entier sur le dos.",
+     "brief": "Grand bernard-l'ermite, coquille-récif colorée, pinces massives."
+    }
+   ]
+  },
+  {
+   "id": "scaraboule",
+   "group": "crunch_poulie",
+   "option": "B",
+   "type": "Insecte",
+   "palette": [
+    "#1B1B22",
+    "#3E7C4A",
+    "#F2B544",
+    "#FF7A1A"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Scaraboule",
+     "dex": "Roule sa boule en contractant tout le ventre.",
+     "brief": "Petit bousier noir irisé, boule de terre."
+    },
+    {
+     "stage": 2,
+     "name": "Scarabloc",
+     "dex": "Sa boule est devenue un bloc de pierre.",
+     "brief": "Scarabée robuste, carapace verte irisée, bloc carré."
+    },
+    {
+     "stage": 3,
+     "name": "Solscarab",
+     "dex": "Il fait rouler le soleil jusqu'à l'horizon.",
+     "brief": "Scarabée solaire doré, ailes de lumière, sphère ardente."
+    }
+   ]
+  },
+  {
+   "id": "paressor",
+   "group": "releve_jambes",
+   "option": "A",
+   "type": "Plante",
+   "palette": [
+    "#C08A3E",
+    "#EDE3CF",
+    "#3E7C4A",
+    "#E0567A"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Paressor",
+     "dex": "Suspendu à une branche, il lève les pattes… lentement.",
+     "brief": "Petit paresseux beige, longues griffes, sourire tranquille, mousse sur le dos."
+    },
+    {
+     "stage": 2,
+     "name": "Suspendor",
+     "dex": "Il tient suspendu des heures sans fatiguer.",
+     "brief": "Paresseux plus grand, abdos marqués, mousse et fleurs sur le pelage."
+    },
+    {
+     "stage": 3,
+     "name": "Arbolent",
+     "dex": "Il ne tombe jamais. Même en dormant.",
+     "brief": "Grand paresseux-arbre, pelage de lierre, griffes en crochets, fleurs lumineuses."
+    }
+   ]
+  },
+  {
+   "id": "opossumi",
+   "group": "releve_jambes",
+   "option": "B",
+   "type": "Ombre",
+   "palette": [
+    "#4B5563",
+    "#9CA3AF",
+    "#E0567A",
+    "#3B2A55"
+   ],
+   "stages": [
+    {
+     "stage": 1,
+     "name": "Opossumi",
+     "dex": "Pend par la queue et remonte les pattes vers sa tête.",
+     "brief": "Petit opossum gris, queue préhensile, museau rose."
+    },
+    {
+     "stage": 2,
+     "name": "Opossombre",
+     "dex": "La nuit, il s'entraîne la tête en bas.",
+     "brief": "Opossum agile, pelage sombre, yeux réfléchissants."
+    },
+    {
+     "stage": 3,
+     "name": "Pendunuit",
+     "dex": "Suspendu à la lune, il veille sur la forêt.",
+     "brief": "Grand opossum nocturne, queue en croissant, pelage étoilé."
+    }
+   ]
+  }
+ ]
+}

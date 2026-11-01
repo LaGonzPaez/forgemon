@@ -1,0 +1,36 @@
+{
+  "_doc": "Attaques par type. Une créature connaît au départ les 2 attaques 'base' de son type. Toute autre attaque s'apprend UNIQUEMENT avec un Parchemin, gagné par un cours réellement fait. Une attaque monte de rang en combat : rang II après 25 utilisations, rang III après 75 ; +15 % de puissance par rang.",
+  "rank_uses": [0, 25, 75],
+  "rank_power_bonus": 0.15,
+  "types": ["Normal", "Feu", "Eau", "Plante", "Air", "Roc", "Terre", "Acier", "Choc", "Ombre", "Insecte", "Glace", "Poison"],
+  "chart": {
+    "Feu": {"Plante": 2, "Insecte": 2, "Glace": 2, "Acier": 2, "Eau": 0.5, "Roc": 0.5, "Feu": 0.5},
+    "Eau": {"Feu": 2, "Roc": 2, "Terre": 2, "Eau": 0.5, "Plante": 0.5},
+    "Plante": {"Eau": 2, "Roc": 2, "Terre": 2, "Feu": 0.5, "Plante": 0.5, "Air": 0.5, "Insecte": 0.5, "Poison": 0.5, "Acier": 0.5},
+    "Air": {"Plante": 2, "Insecte": 2, "Choc": 2, "Roc": 0.5, "Acier": 0.5},
+    "Roc": {"Feu": 2, "Air": 2, "Insecte": 2, "Glace": 2, "Choc": 0.5, "Terre": 0.5, "Acier": 0.5},
+    "Terre": {"Feu": 2, "Acier": 2, "Roc": 2, "Poison": 2, "Plante": 0.5, "Insecte": 0.5, "Air": 0},
+    "Acier": {"Roc": 2, "Glace": 2, "Feu": 0.5, "Eau": 0.5, "Acier": 0.5},
+    "Choc": {"Roc": 2, "Acier": 2, "Glace": 2, "Normal": 2, "Air": 0.5, "Insecte": 0.5, "Poison": 0.5, "Ombre": 0},
+    "Ombre": {"Ombre": 2, "Choc": 0.5, "Normal": 0},
+    "Insecte": {"Plante": 2, "Ombre": 2, "Feu": 0.5, "Air": 0.5, "Choc": 0.5, "Acier": 0.5, "Poison": 0.5},
+    "Glace": {"Plante": 2, "Air": 2, "Terre": 2, "Feu": 0.5, "Eau": 0.5, "Glace": 0.5, "Acier": 0.5},
+    "Poison": {"Plante": 2, "Poison": 0.5, "Terre": 0.5, "Roc": 0.5, "Acier": 0},
+    "Normal": {"Roc": 0.5, "Acier": 0.5, "Ombre": 0}
+  },
+  "moves": {
+    "Normal":  [["Charge", 35, "base"], ["Griffe", 40, "base"], ["Coup de boule", 60], ["Échauffement", 0, "buff_atk"], ["Gainage", 0, "buff_def"], ["Effort total", 90]],
+    "Feu":     [["Flammèche", 40, "base"], ["Étincelle", 45, "base"], ["Souffle de forge", 70], ["Braise vive", 0, "brule"], ["Coulée de fonte", 95], ["Fournaise", 120]],
+    "Eau":     [["Bulle", 40, "base"], ["Éclaboussure", 45, "base"], ["Vague de fond", 70], ["Brume", 0, "precision_moins"], ["Lame de houle", 95], ["Marée haute", 120]],
+    "Plante":  [["Feuille", 40, "base"], ["Liane", 45, "base"], ["Racines", 0, "soin"], ["Tranche-herbe", 70], ["Sève", 95], ["Forêt vive", 120]],
+    "Air":     [["Bourrasque", 40, "base"], ["Piqué", 45, "base"], ["Vent arrière", 0, "buff_vit"], ["Lame d'air", 70], ["Ouragan", 95], ["Jet stream", 120]],
+    "Roc":     [["Jet de pierre", 40, "base"], ["Coup de corne", 45, "base"], ["Carapace", 0, "buff_def"], ["Éboulis", 70], ["Avalanche", 95], ["Séisme de roche", 120]],
+    "Terre":   [["Coup de boue", 40, "base"], ["Secousse", 45, "base"], ["Sable", 0, "precision_moins"], ["Faille", 70], ["Tremblement", 95], ["Glissement", 120]],
+    "Acier":   [["Pince", 40, "base"], ["Griffe d'acier", 45, "base"], ["Blindage", 0, "buff_def"], ["Étau", 70], ["Rempart", 95], ["Presse hydraulique", 120]],
+    "Choc":    [["Frappe", 40, "base"], ["Poing", 45, "base"], ["Concentration", 0, "buff_atk"], ["Uppercut", 70], ["Martèlement", 95], ["Série d'échec", 120]],
+    "Ombre":   [["Morsure", 40, "base"], ["Ombre portée", 45, "base"], ["Nuit noire", 0, "precision_moins"], ["Griffe nocturne", 70], ["Éclipse", 95], ["Minuit", 120]],
+    "Insecte": [["Piqûre", 40, "base"], ["Vrombissement", 45, "base"], ["Toile", 0, "vit_moins"], ["Dard", 70], ["Essaim", 95], ["Mue royale", 120]],
+    "Glace":   [["Givre", 40, "base"], ["Grêlon", 45, "base"], ["Brise glacée", 0, "vit_moins"], ["Stalactite", 70], ["Blizzard", 95], ["Ère glaciaire", 120]],
+    "Poison":  [["Piqûre toxique", 40, "base"], ["Acide", 45, "base"], ["Venin", 0, "poison"], ["Dard toxique", 70], ["Marécage", 95], ["Nuage mortel", 120]]
+  }
+}

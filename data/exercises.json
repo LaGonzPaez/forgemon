@@ -1,0 +1,51 @@
+{
+  "_doc": "Groupes d'exercices du carnet du coach (onglet SUIVI (2)). 'match' = sous-chaînes cherchées dans le nom normalisé (minuscules, sans accents) ; l'ordre du tableau compte : le premier groupe qui correspond gagne. 'tiers' = paliers Intermédiaire / Avancé / Élite. metric 'ratio_bw' = 1RM estimé (Epley, reps plafonnées à 15) ÷ poids de corps ; 'ratio_bw_plus' = idem mais la charge inclut le poids de corps (lest) ; 'reps' = meilleure série en reps. Repères indicatifs à faire valider par le coach : sur machine, les charges changent d'une marque à l'autre.",
+  "groups": [
+    {"id": "chest_press", "label": "Chest press", "zone": "pecs", "match": ["chest press"], "metric": "ratio_bw", "tiers": [1.0, 1.4, 1.8]},
+    {"id": "ecartes", "label": "Écartés (machine, Gym 80)", "zone": "pecs", "match": ["ecarte"], "metric": "ratio_bw", "tiers": [0.6, 0.9, 1.2]},
+    {"id": "incline", "label": "Développé incliné (barre, cadre guidé)", "zone": "pecs", "match": ["developpe incline", "cadre guide"], "metric": "ratio_bw", "tiers": [0.85, 1.1, 1.4], "note": "Cadre guidé noté SANS la barre depuis le 02/10/2026 (consigne coach). Les séances d'avant incluent la barre : ne pas comparer brut."},
+    {"id": "dips", "label": "Dips machine", "zone": "pecs", "match": ["dips"], "metric": "ratio_bw", "tiers": [1.1, 1.6, 2.1]},
+
+    {"id": "tractions", "label": "Tractions lestées", "zone": "dos", "match": ["traction"], "metric": "ratio_bw_plus", "tiers": [1.4, 1.7, 2.0]},
+    {"id": "tirage_vertical", "label": "Tirage vertical (épaisseur, supination)", "zone": "dos", "match": ["tirage vert"], "metric": "ratio_bw", "tiers": [0.95, 1.25, 1.6]},
+    {"id": "tirage_horizontal", "label": "Tirage horizontal unilatéral", "zone": "dos", "match": ["tirage horizontal"], "metric": "ratio_bw", "tiers": [0.45, 0.65, 0.85], "note": "Charge par bras."},
+    {"id": "pendle_row", "label": "Pendle chest row", "zone": "dos", "match": ["pendle", "rowing"], "metric": "ratio_bw", "tiers": [0.9, 1.2, 1.5], "note": "Rowing : disques seuls depuis le 30/09/2026 (consigne coach)."},
+    {"id": "rdl", "label": "RDL barre", "zone": "dos", "match": ["rdl", "souleve de terre"], "metric": "ratio_bw", "tiers": [1.25, 1.75, 2.25]},
+
+    {"id": "elevations", "label": "Élévations latérales (haltère, poulie)", "zone": "epaules", "match": ["elevation lat"], "metric": "ratio_bw", "tiers": [0.15, 0.22, 0.3], "note": "Charge par haltère / par côté."},
+    {"id": "rear_delt", "label": "Rear delt", "zone": "epaules", "match": ["rear delt", "oiseau"], "metric": "ratio_bw", "tiers": [0.15, 0.22, 0.3]},
+
+    {"id": "curl_marteau", "label": "Curl marteau", "zone": "bras", "match": ["curl marteau"], "metric": "ratio_bw", "tiers": [0.22, 0.32, 0.42], "note": "Charge par haltère."},
+    {"id": "curl_pupitre", "label": "Curl pupitre machine", "zone": "bras", "match": ["curl pupitre"], "metric": "ratio_bw", "tiers": [0.35, 0.5, 0.65]},
+    {"id": "curl_incline", "label": "Curl banc incliné", "zone": "bras", "match": ["curl banc incline", "curl incline"], "metric": "ratio_bw", "tiers": [0.15, 0.22, 0.3], "note": "Charge par haltère."},
+    {"id": "curl_poulie", "label": "Curl unilatéral dos à la poulie", "zone": "bras", "match": ["curl unilat", "curl biceps", "curl poulie"], "metric": "ratio_bw", "tiers": [0.25, 0.35, 0.45]},
+    {"id": "triceps_ext", "label": "Extension triceps unilatérale", "zone": "bras", "match": ["extension triceps"], "metric": "ratio_bw", "tiers": [0.2, 0.3, 0.4]},
+    {"id": "au_front", "label": "Barre / haltère au front", "zone": "bras", "match": ["au front"], "metric": "ratio_bw", "tiers": [0.35, 0.5, 0.65]},
+
+    {"id": "leg_extension", "label": "Leg extension", "zone": "jambes", "match": ["leg extension"], "metric": "ratio_bw", "tiers": [1.1, 1.6, 2.1]},
+    {"id": "leg_curl", "label": "Leg curl (allongé, assis)", "zone": "jambes", "match": ["leg curl"], "metric": "ratio_bw", "tiers": [0.6, 0.9, 1.2]},
+    {"id": "pendulum", "label": "Pendulum", "zone": "jambes", "match": ["pendulum"], "metric": "ratio_bw", "tiers": [1.0, 1.5, 2.0]},
+    {"id": "presse", "label": "Presse (verticale, circulaire)", "zone": "jambes", "match": ["press vertical", "presse"], "metric": "ratio_bw", "tiers": [2.0, 3.0, 4.0]},
+    {"id": "adducteurs", "label": "Adducteurs", "zone": "jambes", "match": ["adducteur"], "metric": "ratio_bw", "tiers": [0.8, 1.2, 1.6]},
+    {"id": "mollets", "label": "Extension mollets", "zone": "jambes", "match": ["mollet"], "metric": "ratio_bw", "tiers": [1.0, 1.5, 2.0]},
+
+    {"id": "crunch_poulie", "label": "Crunch poulie haute", "zone": "abdos", "match": ["crunch"], "metric": "ratio_bw", "tiers": [0.5, 0.75, 1.0]},
+    {"id": "releve_jambes", "label": "Relevé de jambes", "zone": "abdos", "match": ["releve de jambes"], "metric": "reps", "tiers": [12, 18, 25]}
+  ],
+  "activities": [
+    {"id": "hyrox", "label": "Hyrox du samedi", "feeds": ["starter"], "unlocks": "arene"},
+    {"id": "natation", "label": "Natation / plongée", "feeds": ["starter", "hippocampe"]},
+    {"id": "velo", "label": "Vélo pour aller au travail", "feeds": ["starter"]},
+    {"id": "marche", "label": "Marche inclinée", "feeds": ["starter"]},
+    {"id": "cours", "label": "Cours fait (voir docs/GDD.md, question ouverte)", "feeds": ["starter"], "grants": "parchemin"}
+  ],
+  "zones": [
+    {"id": "pecs", "name": "Forge des Pecs", "badge": "Enclume", "champion": "Maîtresse Fonte"},
+    {"id": "dos", "name": "Falaises du Dos", "badge": "Aile", "champion": "Capitaine Rafale"},
+    {"id": "epaules", "name": "Pics des Épaules", "badge": "Sommet", "champion": "Guide Altaïr"},
+    {"id": "bras", "name": "Mine des Bras", "badge": "Marteau", "champion": "Contremaître Brunel"},
+    {"id": "jambes", "name": "Vallée des Jambes", "badge": "Racine", "champion": "Doyenne Sylve"},
+    {"id": "abdos", "name": "Temple des Abdos", "badge": "Noyau", "champion": "Moine Axis"},
+    {"id": "lagon", "name": "Lagon des Brasses", "badge": null, "champion": null, "note": "Zone bonus ouverte par la natation ; maison de l'hippocampe."}
+  ]
+}
